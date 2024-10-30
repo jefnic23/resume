@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.4.19)  26 JAN 2023 22:27
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.3) (format=lualatex 2022.4.19)  29 OCT 2024 19:02
  restricted system commands enabled.
  file:line:error style messages enabled.
 **d:/Coding/resume/Jeff_Nicholas_CV.tex
@@ -657,16 +657,16 @@ Here is how much of LuaTeX's memory you used:
  603 words of node memory still in use:
    8 hlist, 2 vlist, 3 rule, 1 local_par, 4 glue, 10 kern, 1 penalty, 3 glyph, 1
 1 attribute, 53 glue_spec, 11 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1010,3:609,4:255,5:1210,6:146,7:9053,8:22,9:781,10:4,11:41
-1
+   avail lists: 1:1,2:984,3:603,4:231,5:1312,6:138,7:9897,8:16,9:793,10:4,11:606
+
  35452 multiletter control sequences out of 65536+600000
  64 fonts using 27931839 bytes
  87i,16n,110p,1029b,567s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/WINDOWS/Fonts/calibrii.ttf><C:/WINDOWS/Fonts/calibrib.ttf><C:/WINDOWS/Fonts/
 calibrib.ttf><C:/WINDOWS/Fonts/calibri.ttf>
-Output written on Jeff_Nicholas_CV.pdf (1 page, 146358 bytes).
+Output written on Jeff_Nicholas_CV.pdf (1 page, 146246 bytes).
 
-PDF statistics: 47 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 45 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
