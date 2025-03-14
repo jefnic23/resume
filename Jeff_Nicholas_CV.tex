@@ -39,19 +39,28 @@
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Developer}{Hamilton Manufacturing Corp.}{August 2022 -- Present}
+		\begin{cvsubsection}{Backend Developer II}{Porch Software}{January 2025 -- Present}
+			\begin{itemize}
+				\item Implemented OCR to extract data from PDF illustrations for new life insurance products.
+				\item Enhanced SQL Server stored procedures to incorporate new data points in reports.
+				\item Resolved mapping bugs in Acord 103 XML to C\# classes.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Software Developer}{Hamilton Manufacturing Corp.}{August 2022 -- January 2025}
 			\begin{itemize}
 				\item Refactored legacy MVC admin platform to ASP.NET Core Web API and created APIs for a new React-based e-commerce PWA designed to replace outdated native apps. 
 				\item Improved report performance and server response times by up to 85\% through optimized queries and reduced redundancies.
-				\item Built an interceptor using Castle DynamicProxy for logging method parameters and arguments during unhandled exceptions, expediting bug fixes. 
-				\item Developed a messaging service using Azure queue storage and trigger functions to decouple email, SMS, and push notification delivery from core APIs.
+				\item Built an interceptor with Castle DynamicProxy to globally log method parameters during unhandled exceptions, eliminating redundant try/catch logging throughout the codebase and expediting bug fixes.
+				\item Developed a messaging microservice using Azure queue storage and trigger functions to decouple email, SMS, and push notification delivery from core APIs.
+				\item Implemented reCAPTCHA and rate limiting to prevent abuse of credit card tokenization and user account creation API endpoints.
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Senior Database Engineer}{Pitcher List}{December 2019 -- Present}
 			\begin{itemize}
-				\item Originally started on the Data Science team, developing new baseball stats like \textit{weighted Earned Strikes (wES)} and \textit{Simple Pitching Estimation indeX (speX)} using Python machine learning libraries like scikit-learn and SciPy.
-				\item Transitioned into Flask API developer role that involved fixing data-related bugs, adding query parameters to existing endpoints to allow more data shaping, and ingesting new stats from our PostgreSQL database.
-				\item Eventually took on the role of Senior Database Engineer to oversee the migration of our database from ElephantSQL to Amazon RDS, as well as to assist a new React development team in creating and maintaining materialized views to be used in their APIs.
+				\item Migrated staging and production PostgreSQL databases from ElephantSQL to Amazon RDS.
+				\item Created and maintained large materialized views for consumption by Pitcher List and third-party React APIs.
+				\item Developed new baseball statistics like \textit{\color{blue}\href{https://pitcherlist.com/wes-rate-creating-an-improved-csw-rate/}{weighted Earned Strikes (wES)}} and \textit{\color{blue}\href{https://pitcherlist.com/putting-it-all-together-using-spex-as-the-ultimate-pitching-estimator/}{Simple Pitching Estimation indeX (speX)}} using Python machine learning libraries like scikit-learn and SciPy.
+				\item Fixed data-related bugs, enhanced Flask API endpoints with query parameters for flexible data shaping, and integrated new database stats.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -60,7 +69,7 @@
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
 				\item \textbf{Languages}: C\#, SQL, Python, JavaScript, HTML/CSS
-				\item \textbf{Technologies}: ASP.NET Core, Entity Framework Core, SQL Server, Azure, IIS, React, AWS (S3, RDS), PostgreSQL, Heroku, Git, Flask, Jinja, FastAPI
+				\item \textbf{Technologies}: ASP.NET, Entity Framework, SQL Server, Azure, IIS, React, AWS, PostgreSQL, Heroku, Git
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -69,18 +78,15 @@
 		\begin{cvsubsection}{}{}{}
 			\textbf{Spot The Plane} (\textit{{\color{blue}\href{https://www.spottheplane.net/}{spottheplane.net}}})
 			\begin{itemize}
-				\item Aircraft trivia game built using FastAPI, React, and PostgreSQL.
-				\item HTTP requests are sent from the server to the Planespotters API to retrieve the most recent pictures of the provided aircraft registration numbers.
+				\item Aircraft trivia game built using FastAPI, React, PostgreSQL, and the \textit{planespotters.net} photo API.
 			\end{itemize}
 		\end{cvsubsection}
 
 		\begin{cvsubsection}{}{}{}
 			\textbf{Tracey Nicholas Art} (\textit{{\color{blue}\href{https://www.traceynicholas.com/}{traceynicholas.com}}})
 			\begin{itemize}
-				\item E-commerce website built with Flask and Jinja.
-				\item Painting details are stored in a PostgreSQL database with a unique identifier that is used to retrieve images from an AWS S3 bucket.
-				\item Purchases are handled through the PayPal Python SDK.
-				\item Built a custom CRUD page for site administrators to manage product listings.
+				\item Developed an e-commerce site using Flask, Jinja, and PostgreSQL, integrating AWS S3 for image retrieval.
+				\item Implemented PayPal SDK for purchases and built a custom CRUD admin dashboard.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
