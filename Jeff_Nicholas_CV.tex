@@ -26,6 +26,7 @@
 % For mathematical symbols
 \usepackage{amsmath}
 \usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{xcolor}
 
 % Set applicant's personal data for header
 \name{Jeff Nicholas}
@@ -36,23 +37,30 @@
 
 	% Print the header
 	\makeheader
+
+	\begin{cvsection}{Professional Summary}
+		\begin{cvsubsection}{}{}{}
+			\textcolor{darkgray}{Self-taught software developer with a rapid career progression from part-time data science to mid-level engineering. Skilled in building scalable APIs, optimizing large-scale SQL databases, and delivering cloud-based solutions that improve performance and reliability. Experienced across insurance, manufacturing, and sports analytics domains, with a track record of resolving complex integration issues and collaborating across teams to meet enterprise needs. Background in music composition and over a decade of teaching piano honed creativity, patience, and a structured problem-solving mindset that parallels modern software development.}
+		\end{cvsubsection}
+	\end{cvsection}
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Backend Developer II}{Porch Software}{January 2025 -- Present}
+		\begin{cvsubsection}{Software Developer II}{Porch Software}{January 2025 -- Present}
 			\begin{itemize}
-				\item Implemented OCR to extract data from PDF illustrations for new life insurance products.
-				\item Enhanced SQL Server stored procedures to incorporate new data points in reports.
-				\item Resolved mapping bugs in Acord 103 XML to C\# classes.
+				\item Delivered high-priority bug fixes and enhancements for enterprise insurance platforms serving clients such as Pacific Life and Edward Jones, ensuring compliance with complex business rules and multi-party data exchange requirements.
+				\item Diagnosed and resolved integration issues across multi-environment deployments (test, staging, production), including TX103 payload defects, cross-system authorization mismatches, and broken workflow triggers.
+				\item Collaborated with QA, product owners, and carrier partners to clarify ambiguous requirements and implement precise data mapping, preventing downstream processing failures.
+				\item Improved reliability of notification and email distribution pipelines by addressing edge cases in underwriting workflows, ensuring proper delivery to multiple stakeholder groups (advisers, distribution partners, organizational contacts).
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Software Developer}{Hamilton Manufacturing Corp.}{August 2022 -- January 2025}
 			\begin{itemize}
 				\item Refactored legacy MVC admin platform to ASP.NET Core Web API and created APIs for a new React-based e-commerce PWA designed to replace outdated native apps. 
-				\item Improved report performance and server response times by up to 85\% through optimized queries and reduced redundancies.
+				\item Improved report performance and server response times by up to 85\% through optimized EntityFramework queries and reduced redundancies.
 				\item Built an interceptor with Castle DynamicProxy to globally log method parameters during unhandled exceptions, eliminating redundant try/catch logging throughout the codebase and expediting bug fixes.
-				\item Developed a messaging microservice using Azure queue storage and trigger functions to decouple email, SMS, and push notification delivery from core APIs.
-				\item Implemented reCAPTCHA and rate limiting to prevent abuse of credit card tokenization and user account creation API endpoints.
+				\item Developed a messaging microservice using Azure queue storage and trigger functions to decouple email, SMS, and push notification delivery from core APIs, reducing UI response times from several minutes to seconds.
+				\item Implemented rate limiting and reCAPTCHA authorization filters to inhibit rampant abuse of credit card tokenization and user account creation API endpoints.
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Senior Database Engineer}{Pitcher List}{December 2019 -- Present}
@@ -60,7 +68,7 @@
 				\item Migrated staging and production PostgreSQL databases from ElephantSQL to Amazon RDS.
 				\item Created and maintained large materialized views for consumption by Pitcher List and third-party React APIs.
 				\item Developed new baseball statistics like \textit{\color{blue}\href{https://pitcherlist.com/wes-rate-creating-an-improved-csw-rate/}{weighted Earned Strikes (wES)}} and \textit{\color{blue}\href{https://pitcherlist.com/putting-it-all-together-using-spex-as-the-ultimate-pitching-estimator/}{Simple Pitching Estimation indeX (speX)}} using Python machine learning libraries like scikit-learn and SciPy.
-				\item Fixed data-related bugs, enhanced Flask API endpoints with query parameters for flexible data shaping, and integrated new database stats.
+				\item Fixed Airflow bugs caused by dirty data, enhanced Flask API endpoints with query parameters for flexible data shaping, and integrated new database stats.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -68,8 +76,12 @@
 	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Languages}: C\#, SQL, Python, JavaScript, HTML/CSS
-				\item \textbf{Technologies}: ASP.NET, Entity Framework, SQL Server, Azure, IIS, React, AWS, PostgreSQL, Heroku, Git
+				\item \textbf{Languages}: C\#, SQL, Python, JavaScript/TypeScript, HTML/CSS
+				\item \textbf{Backend}: ASP.NET Core, Entity Framework Core, FastAPI, Flask, SQLAlchemy
+				\item \textbf{Frontend}: React, SvelteKit, Jinja, Razor
+				\item \textbf{Databases}: SQL Server, PostgreSQL, SQLite
+				\item \textbf{Cloud}: AWS (\textit{\textcolor{darkgray}{S3, RDS}}), Azure Queue Storage, Azure Functions, Firebase Cloud Messaging, Heroku
+				\item \textbf{DevOps}: Git (\textit{\textcolor{darkgray}{GitHub, GitLab, Bitbucket, Azure DevOps}}), Jira 
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -83,10 +95,10 @@
 		\end{cvsubsection}
 
 		\begin{cvsubsection}{}{}{}
-			\textbf{Tracey Nicholas Art} (\textit{{\color{blue}\href{https://www.traceynicholas.com/}{traceynicholas.com}}})
+			\textbf{Tracey Nicholas Art} (\textit{{\color{blue}\href{https://ceynic-staging-3fadbec13739.herokuapp.com/}{traceynicholas.com}}})
 			\begin{itemize}
-				\item Developed an e-commerce site using Flask, Jinja, and PostgreSQL, integrating AWS S3 for image retrieval.
-				\item Implemented PayPal SDK for purchases and built a custom CRUD admin dashboard.
+				\item Developed an e-comm site and CRUD admin dashboard with FastAPI, SvelteKit, and PostgreSQL.
+				\item Integrated PayPal SDK for purchasing and Cloudinary for image storage and management.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -99,16 +111,14 @@
 		\end{cvsubsection}
 		\begin{cvsubsection}{Ypsilanti, MI}{Eastern Michigan University}{Sept 2007 -- Dec 2013}
 			\begin{itemize}
-				\item \textbf{B.Sc.} in Music (Cum Laude)
+				\item \textbf{B.Sc.} in Music (\textit{\textcolor{darkgray}{Cum Laude}})
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
 	\begin{cvsection}{Interests}
 		\begin{cvsubsection}{}{}{}
-			\begin{itemize}
-				\item Classical music; baseball; football; data science; woodworking; arthouse cinema; epistemology; aviation
-			\end{itemize}
+			Classical music (\textit{\textcolor{darkgray}{Brahms, Bartok, Faure}}), baseball, fantasy baseball, football, data science, woodworking, arthouse cinema (\textit{\textcolor{darkgray}{David Lynch, Stanley Kubrick}}), epistemology (\textit{\textcolor{darkgray}{Karl Popper, David Deutsch}}), aviation
 		\end{cvsubsection}
 	\end{cvsection}
 
