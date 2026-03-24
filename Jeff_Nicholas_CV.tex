@@ -38,20 +38,16 @@
 	% Print the header
 	\makeheader
 
-	\begin{cvsection}{Professional Summary}
-		\begin{cvsubsection}{}{}{}
-			\textcolor{darkgray}{Self-taught software developer with a rapid career progression. Skilled in building scalable APIs, optimizing and maintaining large-scale SQL databases, and delivering cloud-based solutions that improve performance and reliability. Experienced across insurance, manufacturing, and sports analytics domains, with a track record of resolving complex integration issues and collaborating across teams to meet enterprise needs. Background in music composition and over a decade of teaching piano honed creativity, patience, and a structured problem-solving mindset that parallels modern software development.}
-		\end{cvsubsection}
-	\end{cvsection}
+	\textcolor{darkgray}{Self-taught software developer with a background in music. Skilled in building scalable APIs, optimizing and maintaining large-scale SQL databases, and delivering cloud-based solutions that improve performance and reliability. Experienced across insurance, manufacturing, and sports analytics domains, with a track record of resolving complex integration issues and collaborating across teams to meet enterprise needs.}
 	
 	% Print the content
 	\begin{cvsection}{Employment}
 		\begin{cvsubsection}{Software Developer II}{Porch Software}{January 2025 -- Present}
 			\begin{itemize}
-				\item Led development of Protection Advantage, a new distribution partner workflow for Edward Jones involving unique permissions and commission structures for 4,000 users across 11 markets.
-				\item Diagnosed and resolved integration issues across multi-environment deployments (test, staging, production), including TX103 payload defects, cross-system authorization mismatches, and broken workflow triggers.
-				\item Collaborated with QA, product owners, and carrier partners to clarify ambiguous requirements and implement precise data mapping, preventing downstream processing failures.
-				\item Improved reliability of notification and email distribution pipelines by addressing edge cases in underwriting workflows, ensuring proper delivery to multiple stakeholder groups (advisers, distribution partners, organizational contacts).
+				\item Led development of the Protection Advantage access model for the Edward Jones platform, adding case-specific Distribution Partner relationships, permissions, SSO claim mapping, and life insurance application logic to enforce secure access across Protection Advantage workflows.
+				\item Enhanced reporting capabilities by developing SQL-driven operational reports, extending backend streaming and secure delivery workflows, and fixing follow-on issues affecting report accuracy and scheduling.
+				\item Implemented Protective workflow changes by adapting the Online Interview lifecycle for Term products, including post-submission handling, disapproval-triggered cancellation, and online-to-phone interview transitions across backend and UI flows.
+				\item Implemented case-visibility rules for Distribution Partner case managers, centralizing assignment logic for term and non-term cases in a reusable backend helper and applying the same business rules in a case-retrieval stored procedure to keep teams, notifications, and case access consistent across workflows.
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Software Developer}{Hamilton Manufacturing Corp.}{August 2022 -- January 2025}
@@ -65,10 +61,11 @@
 		\end{cvsubsection}
 		\begin{cvsubsection}{Senior Database Engineer}{Pitcher List}{December 2019 -- Present}
 			\begin{itemize}
-				\item Migrated staging and production PostgreSQL databases from ElephantSQL to Amazon RDS.
-				\item Created and maintained large materialized views for consumption by Pitcher List and third-party React APIs.
-				\item Developed new baseball statistics like \textit{\color{blue}\href{https://pitcherlist.com/wes-rate-creating-an-improved-csw-rate/}{weighted Earned Strikes (wES)}} and \textit{\color{blue}\href{https://pitcherlist.com/putting-it-all-together-using-spex-as-the-ultimate-pitching-estimator/}{Simple Pitching Estimation indeX (speX)}} using Python machine learning libraries like scikit-learn and SciPy.
-				\item Fixed Airflow bugs caused by dirty data, enhanced Flask API endpoints with query parameters for flexible data shaping, and integrated new database stats.
+				\item Eliminated Heroku R14 errors by replacing in-memory Pandas DataFrame processing with row-level streaming from PostgreSQL, reducing average application memory usage by over 80\%.
+				\item Refactored API framework from Flask to FastAPI for better async support and general performance and development experience improvements.
+				\item Enhanced and maintained a large network of interdependent PostgreSQL materialized views used by Pitcher List and third-party React APIs, adding new metrics and fixing data integrity issues.
+				\item Migrated staging and production PostgreSQL databases from ElephantSQL to Amazon RDS.			
+				\item Developed new baseball statistics like \textit{\color{blue}\href{https://pitcherlist.com/wes-rate-creating-an-improved-csw-rate/}{weighted Earned Strikes (wES)}} and \textit{\color{blue}\href{https://pitcherlist.com/putting-it-all-together-using-spex-as-the-ultimate-pitching-estimator/}{Simple Pitching Estimation indeX (speX)}} using Python machine learning libraries such as \texttt{scikit-learn} and \texttt{SciPy}.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -90,15 +87,15 @@
 		\begin{cvsubsection}{}{}{}
 			\textbf{Spot The Plane} (\textit{{\color{blue}\href{https://www.spottheplane.net/}{spottheplane.net}}})
 			\begin{itemize}
-				\item Aircraft trivia game built using FastAPI, React, PostgreSQL, and the \textit{planespotters.net} photo API.
+				\item Aircraft trivia game built using FastAPI, React, PostgreSQL, and the \color{blue}\href{https://www.planespotters.net/photo/api}{\textit{planespotters.net} photo API}.
 			\end{itemize}
 		\end{cvsubsection}
 
 		\begin{cvsubsection}{}{}{}
 			\textbf{Tracey Nicholas Art} (\textit{{\color{blue}\href{https://ceynic-staging-3fadbec13739.herokuapp.com/}{traceynicholas.com}}})
 			\begin{itemize}
-				\item Developed an e-comm site and CRUD admin dashboard with FastAPI, SvelteKit, and PostgreSQL.
-				\item Integrated PayPal SDK for purchasing and Cloudinary for image storage and management.
+				\item E-commerce site and CRUD admin dashboard built with FastAPI, SvelteKit, and PostgreSQL.
+				\item Integrated with PayPal SDK for purchasing and Cloudinary for image storage and management.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -118,7 +115,7 @@
 
 	\begin{cvsection}{Interests}
 		\begin{cvsubsection}{}{}{}
-			Classical music (\textit{\textcolor{darkgray}{Brahms, Bartok, Faure}}), baseball, fantasy baseball, football, data science, woodworking, arthouse cinema (\textit{\textcolor{darkgray}{David Lynch, Stanley Kubrick}}), epistemology (\textit{\textcolor{darkgray}{Karl Popper, David Deutsch}}), aviation
+			Classical music (\textit{\textcolor{darkgray}{Brahms, Bartok, Faure, Schubert}}), baseball, fantasy baseball, football, data science, woodworking, movies (\textit{\textcolor{darkgray}{David Lynch, Stanley Kubrick, Terrence Malick}}), epistemology (\textit{\textcolor{darkgray}{Karl Popper, David Deutsch}}), aviation
 		\end{cvsubsection}
 	\end{cvsection}
 
